@@ -15,3 +15,8 @@ document.querySelector("#btn1").addEventListener('click',function () {
 
     document.querySelector("img").setAttribute("src",  document.querySelector("input").value);
 })
+
+document.querySelector("#bb").addEventListener('keyup',function () {
+
+    document.querySelector("#main").innerText=  document.querySelector("#bb").value;
+})
