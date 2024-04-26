@@ -1,5 +1,22 @@
 $('h1').css('color','red');
 
- var  RS=jQuery.noConflict();
+ // var  RS=jQuery.noConflict();
+ //
+ // RS('h2').css('color','blue');
 
- RS('h2').css('color','blue');
+$('#btn1').css('color','red');
+$("li:first-child").css('color','yellow');
+
+$('h1,h2').css('color','purple');
+
+//remove
+// $('p').remove();
+
+//get text
+// $('h1').text();
+
+//change text
+$('h2').text("gaaji");
+
+
+
