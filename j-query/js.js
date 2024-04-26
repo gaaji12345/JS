@@ -31,4 +31,10 @@ $('img').attr('src','https://www.ijse.lk/images/logos/ijse.png');
 $('img').attr('src');
 
 
+//create  event
+$('button').click(function (){
+    alert("gaaaji");
+});
+
+
 
