@@ -24,5 +24,11 @@ $('#in1').val();
 //set value input
 $('#in1').val("gaaji");
 
+//change attribute
+$('img').attr('src','https://www.ijse.lk/images/logos/ijse.png');
+
+//get attribute
+$('img').attr('src');
+
 
 
