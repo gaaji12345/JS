@@ -18,5 +18,11 @@ $('h1,h2').css('color','purple');
 //change text
 $('h2').text("gaaji");
 
+//get val input value;
+$('#in1').val();
+
+//set value input
+$('#in1').val("gaaji");
+
 
 
