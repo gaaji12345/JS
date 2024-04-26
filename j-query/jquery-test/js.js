@@ -1,5 +1,8 @@
-$('button').click(function (){
-   $('#in1').val();
+$('#b1').click(function (){
+
+   // $('h1').text();
+   // $('#in1').val();
+   $("h1").text($('#in1').val());
 });
 
 $('.i1').click(function (){
