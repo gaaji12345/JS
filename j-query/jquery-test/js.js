@@ -25,3 +25,12 @@ $('.i3').click(function (){
 
 });
 
+$('#btnup').click(function (){
+
+   $('ul').prepend('<li>'+$('#input1').val()+'</li>');
+});
+
+$('#btndown').click(function (){
+   $('ul').append('<li>'+$('#input2').val()+'</li>');
+});
+
