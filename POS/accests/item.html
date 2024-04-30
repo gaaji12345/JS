@@ -34,31 +34,32 @@
     <!--        <div class="col"></div>-->
     <div class="col-7">
       <div class="mb-3">
-        <label for="input1" class="form-label">Item-ID</label>
-        <input type="text" class="form-control" id="input1" placeholder="Guest-ID">
+        <label for="txtitemId" class="form-label">Item-ID</label>
+        <input type="text" class="form-control" id="txtitemId" placeholder="Guest-ID">
         <p><small id="error" class="text-bg-danger"></small></p>
       </div>
       <div class="mb-3">
-        <label for="input2" class="form-label">Item Name</label>
-        <input type="text" class="form-control" id="input2" placeholder="Guest-Name">
+        <label for="txtitemName" class="form-label">Item Name</label>
+        <input type="text" class="form-control" id="txtitemName" placeholder="Guest-Name">
       </div>
       <div class="mb-3">
-        <label for="input3" class="form-label">Description</label>
-        <input type="text" class="form-control" id="input3" placeholder="Address">
+        <label for="txtitemDesc" class="form-label">Description</label>
+        <input type="text" class="form-control" id="txtitemDesc" placeholder="Address">
       </div>
       <div class="mb-3">
-        <label for="input4" class="form-label">Qty</label>
-        <input type="tel" class="form-control" id="input4" placeholder="salary">
+        <label for="txtitemQty" class="form-label">Qty</label>
+        <input type="tel" class="form-control" id="txtitemQty" placeholder="salary">
       </div>
 
-      <button type="submit" id="btnsave" class="btn btn-primary"> SAVE</button>
+      <button type="submit" id="btnsaveItem" class="btn btn-primary"> SAVE</button>
+      <button type="button"  class="btn btn-success">GetAll</button>
       <button type="button" class="btn btn-success">UPDATE</button>
       <button type="button" class="btn btn-danger">DELETE</button>
     </div>
     <div class="col">
       <div class="mb-3">
         <label for="input4" class="form-label">Find</label>
-        <input type="text"  class="form-control" id="input5" placeholder="Find">
+        <input type="text"  class="form-control" id="input4" placeholder="Find">
         <button type="button" id="btnsearch" class="btn btn-secondary">SEARCH</button>
       </div>
     </div>
@@ -82,6 +83,10 @@
     </tbody>
   </table>
 </div>
+
+
+<script src="jquery-3.7.1.min.js"></script>
+<script src="item.js"></script>
 
 </body>
 </html>
