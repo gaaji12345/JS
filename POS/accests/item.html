@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SCALLOPS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cutsomer.html" >Customer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="order.html">Order</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container-fluid">
+  <section class="row">
+    <!--        <div class="col"></div>-->
+    <div class="col-7">
+      <div class="mb-3">
+        <label for="input1" class="form-label">Item-ID</label>
+        <input type="text" class="form-control" id="input1" placeholder="Guest-ID">
+        <p><small id="error" class="text-bg-danger"></small></p>
+      </div>
+      <div class="mb-3">
+        <label for="input2" class="form-label">Item Name</label>
+        <input type="text" class="form-control" id="input2" placeholder="Guest-Name">
+      </div>
+      <div class="mb-3">
+        <label for="input3" class="form-label">Description</label>
+        <input type="text" class="form-control" id="input3" placeholder="Address">
+      </div>
+      <div class="mb-3">
+        <label for="input4" class="form-label">Qty</label>
+        <input type="tel" class="form-control" id="input4" placeholder="salary">
+      </div>
+
+      <button type="submit" id="btnsave" class="btn btn-primary"> SAVE</button>
+      <button type="button" class="btn btn-success">UPDATE</button>
+      <button type="button" class="btn btn-danger">DELETE</button>
+    </div>
+    <div class="col">
+      <div class="mb-3">
+        <label for="input4" class="form-label">Find</label>
+        <input type="text"  class="form-control" id="input5" placeholder="Find">
+        <button type="button" id="btnsearch" class="btn btn-secondary">SEARCH</button>
+      </div>
+    </div>
+  </section>
+</main>
+<br>
+
+<div class="shadow-lg container-fluid">
+  <table class="table table-bordered  mt-3">
+    <thead class="table-dark ">
+    <tr>
+      <th scope="col">Item-ID</th>
+      <th scope="col">Item-Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Qty</th>
+
+    </tr>
+    </thead>
+    <tbody id="tb">
+
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
