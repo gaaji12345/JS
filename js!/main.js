@@ -47,4 +47,8 @@ document.getElementById("img3").addEventListener('click',function () {
 
 });
 
+document.getElementById("b1").addEventListener('click',function (){
+   document.getElementById("h1s").style.color="red";
+})
+
 
