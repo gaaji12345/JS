@@ -16,12 +16,20 @@ $('#btnSaveustomer').click(function () {
 
     }
 
+    customers.push(customerOb);
+
+
     loadAll();
+
+    btnRowClick();
+
+
+
     // console.log(customer);
 
 
-    customers.push(customerOb);
-    console.log(customers)
+
+   // console.log(customers)
 });
 
 $('#btnupdate').click(function (){
@@ -39,11 +47,34 @@ function loadAll(){
 
     $('#tb').empty();
     for (var i of customers){
-        console.log(i.id);
+        //console.log(i.id);
 
         var row="<tr><td>"+i.id+"</td><td>"+i.name+"</td><td>"+i.address+"</td><td>"+i.salary+"</td></tr>";
 
        // var row=`<tr><td>$(i.id)</td><td>$(i.name)</td><td>$(i.address)</td><td>$(i.salary)</td></tr>`;
         $('#tb').append(row);
     }
+}
+
+
+function btnRowClick (){
+    $('#tb>tr').click(function (){
+        let id=$(this).children(":eq(0)").text();
+        let name=$(this).children(":eq(1)").text();
+        let address=$(this).children(":eq(2)").text();
+        let salary=$(this).children(":eq(3)").text();
+
+        console.log(id,name,address,salary);
+
+        $('#txtCid').val(id);
+        $('#txtcName').val(name);
+        $('#txtAddress').val(address);
+        $('#txtSalry').val(salary);
+
+    });
+
+}
+
+function doubleClick(){
+
 }
