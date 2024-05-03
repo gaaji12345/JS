@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">SCALLOPS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="item.html">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="payment.html">Order</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container-fluid">
+    <section class="row">
+        <!--        <div class="col"></div>-->
+        <div class="col-7">
+            <div class="mb-3">
+                <label for="txtCid" class="form-label">Guest-ID</label>
+                <input type="text" class="form-control" id="txtCid" placeholder="Guest-ID">
+                <p><small id="error" class="text-bg-danger"></small></p>
+            </div>
+            <div class="mb-3">
+                <label for="txtcName" class="form-label">Guest Name</label>
+                <input type="text" class="form-control" id="txtcName" placeholder="Guest-Name">
+            </div>
+            <div class="mb-3">
+                <label for="txtAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="txtAddress" placeholder="Address">
+            </div>
+            <div class="mb-3">
+                <label for="txtSalry" class="form-label">Slary</label>
+                <input type="tel" class="form-control" id="txtSalry" placeholder="salary">
+            </div>
+
+            <button type="submit" id="btnSaveustomer" class="btn btn-primary"> SAVE</button>
+            <button type="button" id="btnupdate" class="btn btn-success">UPDATE</button>
+            <button type="button" class="btn btn-danger">DELETE</button>
+        </div>
+        <div class="col">
+            <div class="mb-3">
+                <label for="input4" class="form-label">Find</label>
+                <input type="text"  class="form-control" id="input4" placeholder="Find">
+                <button type="button" id="btnsearch" class="btn btn-secondary">SEARCH</button>
+            </div>
+        </div>
+    </section>
+</main>
+<br>
+
+<div class="shadow-lg container-fluid">
+    <table class="table table-bordered  table-hover mt-3">
+        <thead class="table-dark ">
+        <tr>
+            <th scope="col">Customer-ID</th>
+            <th scope="col">Customer-Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Salary</th>
+
+        </tr>
+        </thead>
+        <tbody id="tb">
+         <tr>
+             <td>C001</td>
+             <td>Gaaji</td>
+             <td>gjhg</td>
+             <td>hgh</td>
+         </tr>
+         <tr>
+             <td>C002</td>
+             <td>Gjhj</td>
+             <td>nbhj</td>
+             <td>jhgjhg</td>
+         </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="jquery-3.7.1.min.js"></script>
+<script src="js.js"></script>
+
+</body>
+</html>
