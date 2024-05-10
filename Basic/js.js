@@ -45,4 +45,46 @@ for (var i in array){
 }
 
 
+//controll stutures
 
+var i=10;
+// if (i<20){
+//     console.log("small");
+// }else if (i<=10){
+//     console.log("same");
+// }else {
+//     console.log("no")
+// }
+
+// switch (i) {
+//     case 1:console.log("hiii");;break;
+//     case 10:console.log("goo");break;
+// }
+
+
+//Expresion
+let muage=function (){
+    return 30;
+}
+
+function  msg(c1,c2){
+    return c1()+c2;
+}
+
+function my(){
+    return"ME";
+}
+
+let o=msg(my,"Gaaji");
+console.log(o);
+
+//return function in function
+
+function getMyData(){
+    return function getdata()
+    {
+        console.log("My name")
+    }
+}
+
+getMyData()();
