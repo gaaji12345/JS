@@ -88,3 +88,107 @@ function getMyData(){
 }
 
 getMyData()();
+
+// function Item(){
+//     this.id="I001";
+// }
+// var  i2=new Item();
+// i2.id;
+
+var customer={
+    id:'C001'
+}
+
+function  Vehical(model,year){
+    this.model=model;
+    this.year=year;
+    this.park=function (){
+        return  this.model+ "-"+this.year+"is going to park";
+    }
+}
+
+
+// var v1=new Vehical("Benz",2023);
+// var res =v1.park();
+// console.log(res)
+
+function  Car(model,year){
+  Vehical.apply(this,arguments);
+}
+
+
+Car.prototype=Object.create(Vehical.prototype);
+Car.prototype.constructor=Car;
+
+var v1=new  Vehical();
+var c1=new Car("Toyota",2021);
+var re= c1.park();
+console.log(re);
+
+
+
+
+// Car.prototype=Vehical.prototype;
+//
+// var c=new Car();
+
+//-----------------EX2--------------//
+
+function Animal(id,name){
+    this.id=id;
+    this.name=name;
+    this.cry=function (){
+       return this.id+ "-"+this.name+"=/ is crying...!"
+    }
+}
+
+function Cat(id,name){
+    Animal.apply(this,arguments);//cat eken ob ekak haduowth super ekak widiyata tenayna animal ekath ywana
+
+}
+
+Cat.prototype=Object.create(Animal.prototype);
+Cat.prototype.constructor=Cat;
+
+
+var cat1=new Cat("C001","GAAJI");
+var catp=cat1.cry();
+console.log(catp);
+
+
+var a1=new Animal("C002","Zrba");
+var a2=a1.cry();
+
+
+console.log(a2);
+
+// Cat.prototype.tail=100;
+
+
+
+//tHis is a function
+//easy way use extends
+
+class Backery{
+    constructor(i,n) {
+        this.i=i;
+        this.n=n;
+    }
+
+    pa(){
+        return this.i+"-"+this.n+"-Gaaaaaa";
+    }
+}
+
+// var  v=new Backery("V001","Nawo");
+// v.pa();
+
+class B extends Backery{
+    constructor(i,n) {
+      super(i,n)
+    }
+}
+
+
+
+
